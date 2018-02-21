@@ -15,5 +15,8 @@ sudo ln -s /vagrant/html /var/www
 # Restarting apache
 sudo service apache2 reload
 
+# Install git
+sudo apt-get -y install git
+
 # Print the VM IP address
 ip addr show eth1 | egrep "inet\ " | cut -f1 -d "/" | cut -f2 -d "t"
